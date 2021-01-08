@@ -1,4 +1,6 @@
 from turtle import Turtle, Screen
+import random
+
 franklin = Turtle()
 franklin.color("green")
 franklin.shape("turtle")
@@ -63,20 +65,63 @@ franklin.shape("turtle")
 # franklin.forward(60)
 # franklin.right(60)
 
+franklin.pensize(30)
+colors = ["AliceBlue", "CadetBlue", "DarkSeaGreen", "AntiqueWhite", "black", "cornsilk1", "DarkMagneta", "DarkOrange", "aquamarine4"]
+
+# movement = [franklin.forward(100), franklin.right(500), franklin.left(300), franklin.forward(410), franklin.right(90), franklin.left(350)]
+
+movement = [0, 90, 180, 270]
+
+for _ in range(200):
+    franklin.forward(30)
+    franklin.setheading(random.choice(movement))
 
 #Making shapes but using a function - what angela did
 # Since the number of sides wont be the same for all the shapes we will use a function 
-def draw_shape (num_sides):
-    angle = 360/num_sides
-    for _ in range(num_sides):
-        franklin.forward(100)
-        franklin.right(angle)
+# def draw_shape (num_sides):
+#     angle = 360/num_sides
+#     for _ in range(num_sides):
+#         franklin.forward(100)
+#         franklin.right(angle)
+        # franklin.forward(random.choice(colors))
+
+  # draw_shape(3)
+    # draw_shape(4)
+    # draw_shape(5)
 
 
-draw_shape(3)
-draw_shape(4)
-draw_shape(5)
+
+# for moves in movement:
+#     random.choice(colors)        
+#     random.choice(movement)
+    # random.choice(movement)
+    # random.choice(movement)
+    # random.choice(movement)
+
+# def move(number):
+#     franklin.forward(number)
+#     franklin.left(number)
+#     franklin.right(number)
+#     franklin.backward(number)
+#     franklin.circle(number)
+
+# move(30)
+  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 screen = Screen()
 screen.exitonclick()
+
+# random.choice()
