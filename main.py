@@ -1,7 +1,23 @@
 from turtle import Turtle, Screen
 import random
 
+
+
 franklin = Turtle()
+
+
+
+#creating random color
+
+def random_color(n1, n2, n3):
+    r = random.randint(n1, 255)
+    g = random.randint(n2, 255)
+    b = random.randint(n3, 255)
+    rgb = (r, g, b)
+    return rgb
+# print(random_color(148, 207, 223))
+
+
 franklin.color("green")
 franklin.shape("turtle")
 
@@ -73,7 +89,7 @@ colors = ["AliceBlue", "CadetBlue", "DarkSeaGreen", "green", "black", "cornsilk1
 movement = [0, 90, 180, 270]
 
 for _ in range(200):
-    franklin.color(random.choice(colors))
+    # franklin.color(random.choice(colors)) this works but for the next challenge we will try doing this with tuples
     franklin.forward(30)
     franklin.setheading(random.choice(movement))
 
