@@ -137,7 +137,7 @@ franklin.shape("turtle")
 #Draw a circle 
 
 
-#It works did it by myself 
+#It works did it by myself -Made spirograph
 for _ in range(45):
     franklin.circle(100)
     franklin.forward(10)
