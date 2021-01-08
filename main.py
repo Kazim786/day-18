@@ -65,14 +65,15 @@ franklin.shape("turtle")
 # franklin.forward(60)
 # franklin.right(60)
 
-franklin.pensize(30)
-colors = ["AliceBlue", "CadetBlue", "DarkSeaGreen", "AntiqueWhite", "black", "cornsilk1", "DarkMagneta", "DarkOrange", "aquamarine4"]
+franklin.pensize(10)
+colors = ["AliceBlue", "CadetBlue", "DarkSeaGreen", "green", "black", "cornsilk1", "DarkOrange", "aquamarine4"]
 
 # movement = [franklin.forward(100), franklin.right(500), franklin.left(300), franklin.forward(410), franklin.right(90), franklin.left(350)]
 
 movement = [0, 90, 180, 270]
 
 for _ in range(200):
+    franklin.color(random.choice(colors))
     franklin.forward(30)
     franklin.setheading(random.choice(movement))
 
