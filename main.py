@@ -9,12 +9,12 @@ franklin = Turtle()
 
 #creating random color
 
-def random_color(n1, n2, n3):
-    r = random.randint(n1, 255)
-    g = random.randint(n2, 255)
-    b = random.randint(n3, 255)
-    rgb = (r, g, b)
-    return rgb
+# def random_color(n1, n2, n3):
+#     r = random.randint(n1, 255)
+#     g = random.randint(n2, 255)
+#     b = random.randint(n3, 255)
+#     rgb = (r, g, b)
+#     return rgb
 # print(random_color(148, 207, 223))
 
 
@@ -81,17 +81,27 @@ franklin.shape("turtle")
 # franklin.forward(60)
 # franklin.right(60)
 
-franklin.pensize(10)
-colors = ["AliceBlue", "CadetBlue", "DarkSeaGreen", "green", "black", "cornsilk1", "DarkOrange", "aquamarine4"]
 
-# movement = [franklin.forward(100), franklin.right(500), franklin.left(300), franklin.forward(410), franklin.right(90), franklin.left(350)]
 
-movement = [0, 90, 180, 270]
 
-for _ in range(200):
-    # franklin.color(random.choice(colors)) this works but for the next challenge we will try doing this with tuples
-    franklin.forward(30)
-    franklin.setheading(random.choice(movement))
+#Random walk
+
+# franklin.pensize(10)
+# colors = ["AliceBlue", "CadetBlue", "DarkSeaGreen", "green", "black", "cornsilk1", "DarkOrange", "aquamarine4"]
+
+
+
+# movement = [0, 90, 180, 270]
+
+# for _ in range(200):
+#     # franklin.color(random.choice(colors)) this works but for the next challenge we will try doing this with tuples
+#     franklin.forward(30)
+#     franklin.setheading(random.choice(movement))
+
+
+
+
+
 
 #Making shapes but using a function - what angela did
 # Since the number of sides wont be the same for all the shapes we will use a function 
@@ -123,7 +133,29 @@ for _ in range(200):
 #     franklin.circle(number)
 
 # move(30)
-  
+
+#Draw a circle 
+
+
+#It works did it by myself 
+for _ in range(45):
+    franklin.circle(100)
+    franklin.forward(10)
+    franklin.right(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -142,3 +174,6 @@ screen = Screen()
 screen.exitonclick()
 
 # random.choice()
+
+
+
