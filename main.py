@@ -139,9 +139,15 @@ franklin.shape("turtle")
 
 #It works did it by myself -Made spirograph
 for _ in range(45):
-    franklin.circle(100)
+    franklin.circle(50) #100
     franklin.forward(10)
     franklin.right(10)
+
+    # for _ in range(45):
+    #     franklin.circle(50) #100
+    #     franklin.forward(10)
+    #     franklin.right(10)
+   
 
 
 
