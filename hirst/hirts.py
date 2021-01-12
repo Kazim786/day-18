@@ -38,6 +38,7 @@ def painting(list_of_colors):
         t.pencolor(colors)
         t.pensize(20)
         t.pendown()
+        t.penup()
         t.forward(50)
 
 
