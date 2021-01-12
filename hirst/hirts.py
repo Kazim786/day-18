@@ -32,21 +32,30 @@ colors_list = [(245, 243, 238), (248, 241, 244), (237, 240, 246), (201, 164, 112
 
 t = Turtle()
 
-def painting(list_of_colors):
-    for colors in list_of_colors:
+# def painting(list_of_colors):
+#     for colors in list_of_colors:
 
-        t.pencolor(colors)
-        t.pensize(20)
-        t.pendown()
-        t.penup()
-        t.forward(50)
+#         t.pencolor(colors) #can accept tuple as an argument. So each index being a tuple here isnt a problem
+#         t.pensize(20)
+#         t.pendown()
+#         t.penup()
+#         t.forward(50)
+#         have to turn the direction up
 
 
-painting(colors_list)
+# painting(colors_list)
 #might need tuple
-# for colors in colors_list:
-    
+# gonna uncomment this
 
+t.shape("turtle")
+
+t.pen(fillcolor="green", pencolor= "black", pensize=20)
+for _ in range(30):
+    # t.pensize(20)
+    t.pendown()
+    # t.fillcolor("green") #Color of the turtle itself is changing
+    t.penup()
+    t.forward(10)
 
 
 
